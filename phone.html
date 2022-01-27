@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Website Design using HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="C:\Users\sinik\Desktop\project\images\logo.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src=C:\Users\sinik\Desktop\project\images\mobile.png class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="C:\Users\sinik\Desktop\project\images\camera.png">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>12MP, wide angle lens</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="C:\Users\sinik\Desktop\project\images\processor.png">
+                        <div>
+                            <h1>Processor</h1>
+                            <p>Snapdragon Octa-core 11nm</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="C:\Users\sinik\Desktop\project\images\display.png">
+                        <div>
+                            <h1>Display</h1>
+                            <p>6.5" Mini-Drop Fullscreen</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="C:\Users\sinik\Desktop\project\images\battery.png">
+                        <div>
+                            <h1>Battery Life</h1>
+                            <p>5000mAh, 720Hrs standby</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="C:\Users\sinik\Desktop\project\images\arrow1.png" id="upBtn">
+                <h3>Features</h3>
+                <img src="C:\Users\sinik\Desktop\project\images\arrow1.png" id="downBtn">
+            </div>
+        </div>
+            <script>
+                var circle=document.getElementsById("circle");
+                var upBtn=document.getElementsById("upBtn");
+                var downBtn=document.getElementsById("downBtn");
+                var rotateValue = circle.style.transform;
+                var rotateSum;
+                
+                upBtn.onclick = function()
+                {
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+                }
+                downBtn.onclick = function()
+                {
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+                }
+              
+            </script>
+
+    </body>
+</html>
